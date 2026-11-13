@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Hub｜課程筆記</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="search.js"></script>
+</head>
+<body>
+<header><div><a href="index.html">Study Hub</a></div></header>
+<main>
+<h1>課程筆記</h1>
+<p class="intro">依課程與章節瀏覽，或用關鍵字找到想複習的觀念。</p>
+<section class="search" aria-label="全站搜尋">
+<label for="query">搜尋筆記</label>
+<input id="query" type="search" placeholder="例如：生產力" autocomplete="off">
+<p id="status" role="status" hidden></p>
+<ul id="results" hidden></ul>
+</section>
+<section aria-labelledby="course-list">
+<h2 id="course-list">課程</h2>
+<a class="card" href="courses/operations-management.html"><strong>作業與供應鏈管理</strong><span>瀏覽章節與筆記</span></a>
+</section>
+</main>
+</body>
+</html>
