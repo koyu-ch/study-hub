@@ -1,0 +1,70 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>決策分析方法｜Study Hub</title><link rel="stylesheet" href="../../../style.css"></head><body><header><div><a href="../../../index.html">Study Hub</a></div></header><main class="reading"><nav aria-label="返回"><a href="../../../courses/operations-management.html">返回課程</a></nav><article><h1>決策分析方法</h1><p class="meta">作業與供應鏈管理／決策分析方法</p><p class="keywords">關鍵字 · Maximax、Maximin、EMV、決策樹</p><aside class="callout"><h2>重點提示</h2><p>依本章核心問題理解觀念，並配合原始講義中的例子、公式與比較。</p></aside><h2>第四章|決策分析方法</h2>
+<h2>1. 本章核心問題</h2>
+<p>當企業面臨多種方案,但無法確定未來市場情況時,應如何做出合理決策?</p>
+<p>決策分析(Decision Analysis)的核心,不是保證每次都選到最好的結果,而是讓管理者依照已知資訊、風險與決策目標,選擇具有合理依據的方案。</p>
+<h2>2. 決策的基本架構</h2>
+<p>一個完整的決策問題通常包含:</p>
+<p>• 決策方案(Alternatives):管理者可以選擇的行動。</p>
+<p>• 自然狀態(States of Nature):管理者無法控制的外部情況。</p>
+<p>• 報酬(Payoff):特定方案在特定自然狀態下產生的結果。</p>
+<p>• 機率(Probability):各自然狀態發生的可能性,若可估計便能用於風險決策。</p>
+<p>例如,企業決定是否擴廠,屬於決策方案;未來市場需求高低則屬於自然狀態。決策問題通常透過報酬表(Payoff Table)呈現。</p>
+<h2>3. 三種決策環境</h2>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">決策環境                     資訊條件          主要方法</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">確定性 Certainty            已知未來會發生的狀態    比較各方案確定的結果</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">不確定性 Uncertainty         不知道各狀態發生的機率   Maximax、Maximin、Minimax Regret、Laplace、Hurwicz</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">風險 Risk                  可以估計自然狀態的機率   EMV、決策樹</pre>
+<p>最重要的判斷:有沒有自然狀態的機率?沒機率時,必須根據管理者的決策準則選擇;有機率時,可以計算期望結果。</p>
+<h2>4. 不確定性下的五種決策方法</h2>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">決策方案               高需求          低需求</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">擴廠                 100          -20</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">維持現況               60           30</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">外包                 40           35</pre>
+<p>(1)Maximax 最大最大準則 這是一種樂觀型決策準則。先找出每個方案可能得到的最大報酬,再選擇其中最高者。公式:maxi(maxj Pij)。</p>
+<p>各方案最大報酬為 100、60、40,因此選擇擴廠。這個方法重視最佳可能結果,不考慮最差情況的損失。</p>
+<p>(2)Maximin 最大最小準則 這是一種保守型決策準則。先找出每個方案的最小報酬,再選擇其中最高者。公式:maxi(minj Pij)。</p>
+<p>各方案最小報酬為 -20、30、35,因此選擇外包。其核心是確保最差情況下的結果相對較好。</p>
+<p>(3)Minimax Regret 最小最大後悔準則 這個方法不是直接比較報酬,而是比較錯失最佳選擇所產生的機會損失(Regret)。公式:Rij = maxi(Pij) − Pij。</p>
+<p>先計算每種自然狀態下的最佳報酬,再求各方案的後悔值。</p>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">決策方案                  高需求後悔值               低需求後悔值          最大後悔值</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">擴廠                    0                    55              55</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">維持現況                  40                   5               40</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">外包                    60                   0               60</pre>
+<p>選擇最大後悔值最小的方案,因此選擇維持現況。這個準則關注的是避免事後產生過大的機會損失。</p>
+<p>(4)Laplace 等可能準則 當缺乏機率資訊時,假設所有自然狀態發生的機率相同。公式:Li = (Σj Pij) / n。</p>
+<p>在兩種自然狀態下: 要注意,等機率只是這個方法採用的假設,不代表真實市場的機率一定相同。</p>
+<p>• 擴廠:(100 − 20) / 2 = 40。</p>
+<p>• 維持現況:(60 + 30) / 2 = 45。</p>
+<p>• 外包:(40 + 35) / 2 = 37.5。因此選擇維持現況。</p>
+<p>(5)Hurwicz 樂觀-悲觀折衷準則 Hurwicz 方法利用樂觀係數 α 結合最佳與最差結果。公式:Hi = α(最大報酬) + (1 − α)(最小報酬)。</p>
+<p>其中 α 為樂觀係數,介於 0 與 1。α = 1 代表完全樂觀,相當於 Maximax;α = 0 代表完全保守,相當於 Maximin。假設 α = 0.6:</p>
+<p>• H(擴廠)= 0.6(100) + 0.4(-20) = 52。</p>
+<p>• H(維持)= 0.6(60) + 0.4(30) = 48。</p>
+<p>• H(外包)= 0.6(40) + 0.4(35) = 38。 因此選擇擴廠。</p>
+<h2>5. 五種不確定性決策方法比較</h2>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">方法                              核心思考                選擇依據</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">Maximax                         最樂觀                 最大報酬中的最大值</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">Maximin                         最保守                 最小報酬中的最大值</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">Minimax Regret                  避免後悔                最大後悔值中的最小值</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">Laplace                         各狀態等可能              平均報酬最高</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">Hurwicz                         樂觀與保守折衷             加權報酬最高</pre>
+<h2>6. 風險下的決策:期望貨幣價值 EMV</h2>
+<p>當自然狀態的機率可以估計時,可以使用期望貨幣價值(Expected Monetary Value, EMV)。公式:EMVi = Σj pjPij。</p>
+<p>其中 pj 為自然狀態 j 的機率,且所有機率加總為 1。假設高需求機率為 0.7,低需求機率為 0.3:</p>
+<p>• EMV(擴廠)= 0.7(100) + 0.3(-20) = 64。</p>
+<p>• EMV(維持)= 0.7(60) + 0.3(30) = 51。</p>
+<p>• EMV(外包)= 0.7(40) + 0.3(35) = 38.5。</p>
+<p>因此 EMV 最高的方案是擴廠。EMV 適合以期望金額作為主要決策依據的情況,但不直接反映管理者對風險的厭惡程度</p>
+<h2>7. 決策樹(Decision Tree)</h2>
+<p>決策樹適合處理多階段、具有先後順序的決策問題。</p>
+<p>• □ 決策節點(Decision Node):管理者選擇方案。</p>
+<p>• ○ 機會節點(Chance Node):依機率發生不同結果。</p>
+<p>• 分支(Branch):代表行動或自然狀態。</p>
+<p>• 終端結果(Terminal Payoff):各路徑最後的報酬。</p>
+<p>決策樹示意:起點□→ 選擇方案A或B→各方案的○機會節點→高需求(0.7)或低需求(0.3)→終端報酬。方案A的高、低需求報酬為100、-20;方案B為 60、30</p>
+<p>決策樹的計算邏輯 計算時採用由右向左的回推法(Rollback):</p>
+<h2>1.   先計算最右端機會節點的期望值。</h2>
+<h2>2.   回到決策節點,選擇期望報酬最高的分支。</h2>
+<h2>3.   若存在多個階段,持續往左回推。</h2>
+<h2>4.   最後決定起始節點的最佳方案。</h2>
+<p>先判斷決策環境,再選擇適當方法:沒有機率 → 不確定性決策準則;有機率 → EMV;有多階段決策 → 決策樹。</p><p class="meta">資料來源：使用者提供之《期中重點整理.pdf》。</p></article></main></body></html>
