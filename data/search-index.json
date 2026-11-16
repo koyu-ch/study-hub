@@ -1,14 +1,83 @@
 [
   {
     "course": "作業與供應鏈管理",
-    "chapter": "生產力",
-    "title": "單要素生產力",
+    "chapter": "生產與作業管理基礎",
+    "title": "生產與作業管理基礎",
+    "keywords": [
+      "生產方式",
+      "設施配置",
+      "製造業",
+      "服務業"
+    ],
+    "path": "notes/operations-management/production-operations/production-operations.html"
+  },
+  {
+    "course": "作業與供應鏈管理",
+    "chapter": "生產力、競爭力與營運績效",
+    "title": "生產力、競爭力與營運績效",
     "keywords": [
       "生產力",
-      "勞動生產力",
-      "工時",
-      "投入與產出"
+      "單要素生產力",
+      "競爭力"
     ],
-    "path": "notes/operations-management/productivity/single-factor-productivity.html"
+    "path": "notes/operations-management/performance/performance.html"
+  },
+  {
+    "course": "作業與供應鏈管理",
+    "chapter": "營運策略與組織決策",
+    "title": "營運策略與組織決策",
+    "keywords": [
+      "營運策略",
+      "使命",
+      "訂單資格",
+      "訂單贏得"
+    ],
+    "path": "notes/operations-management/strategy/strategy.html"
+  },
+  {
+    "course": "作業與供應鏈管理",
+    "chapter": "決策分析方法",
+    "title": "決策分析方法",
+    "keywords": [
+      "Maximax",
+      "Maximin",
+      "EMV",
+      "決策樹"
+    ],
+    "path": "notes/operations-management/decision-analysis/decision-analysis.html"
+  },
+  {
+    "course": "作業與供應鏈管理",
+    "chapter": "需求預測",
+    "title": "需求預測",
+    "keywords": [
+      "預測",
+      "移動平均",
+      "指數平滑"
+    ],
+    "path": "notes/operations-management/forecasting/forecasting.html"
+  },
+  {
+    "course": "作業與供應鏈管理",
+    "chapter": "供應鏈管理與重要術語",
+    "title": "供應鏈管理與重要術語",
+    "keywords": [
+      "供應鏈",
+      "採購",
+      "長鞭效應",
+      "VMI"
+    ],
+    "path": "notes/operations-management/supply-chain/supply-chain.html"
+  },
+  {
+    "course": "作業與供應鏈管理",
+    "chapter": "跨章節知識整合與考前複習",
+    "title": "跨章節知識整合與考前複習",
+    "keywords": [
+      "跨章節",
+      "考前複習",
+      "計算題"
+    ],
+    "path": "notes/operations-management/integration/integration.html"
   }
 ]
