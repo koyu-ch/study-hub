@@ -1,0 +1,69 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>需求預測｜Study Hub</title><link rel="stylesheet" href="../../../style.css"></head><body><header><div><a href="../../../index.html">Study Hub</a></div></header><main class="reading"><nav aria-label="返回"><a href="../../../courses/operations-management.html">返回課程</a></nav><article><h1>需求預測</h1><p class="meta">作業與供應鏈管理／需求預測</p><p class="keywords">關鍵字 · 預測、移動平均、指數平滑</p><aside class="callout"><h2>重點提示</h2><p>依本章核心問題理解觀念，並配合原始講義中的例子、公式與比較。</p></aside><h2>第五章|需求預測 Forecasting</h2>
+<h2>1. 本章核心問題</h2>
+<p>企業必須在未來需求真正發生前,就決定採購數量、產能、人力與庫存。因此,如何利用現有資訊合理估計未來需求,是作業管理的重要問題。</p>
+<h2>2. 預測的基本觀念</h2>
+<p>預測(Forecasting)是利用歷史資料、專家判斷或其他資訊,估計未來可能發生的情況。良好的預測通常應具備三項條件:</p>
+<p>• 準確性(Accuracy):預測值應盡可能接近實際值。</p>
+<p>• 可靠性(Reliability):方法應能持續提供合理結果。</p>
+<p>• 及時性(Timeliness):預測必須在管理決策需要之前完成。</p>
+<p>預測不可能保證完全正確,因此管理者也必須理解預測誤差與不確定性。</p>
+<h2>3. 需求預測的主要流程</h2>
+<p>定義預測目的 → 決定預測期間 → 選擇預測方法 → 蒐集資料 → 產生預測 → 評估結果 → 持續更新。</p>
+<p>預測期間與目的會影響方法選擇。例如,短期生產排程與長期擴廠規劃需要的預測資訊並不相同。</p>
+<h2>4. 定性與定量預測</h2>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">定性預測 Qualitative       定量預測 Quantitative</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">主要依據            專家經驗、意見、判斷             歷史數據與數學模型</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">適用情況            缺乏歷史資料、新產品             有足夠數據與可分析規律</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">常見方法            專家意見、德菲法、市場調查          時間序列、移動平均、指數平滑</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">主要限制            容易受到主觀偏誤影響             依賴資料品質與模型假設</pre>
+<h2>5. 定性預測方法</h2>
+<p>專家意見法(Expert Opinion)</p>
+<p>透過具備專業知識或產業經驗的人員,對未來需求進行判斷。優點是快速且可以納入無法量化的資訊;缺點是容易受到個人經驗與主觀偏誤影響。</p>
+<p>德菲法(Delphi Method)</p>
+<p>德菲法透過多回合匿名意見蒐集,逐步形成專家共識。基本流程:選定專家 → 匿名蒐集意見 → 彙整結果 → 回饋專家 → 再次評估 → 形成較穩定的預測。</p>
+<p>其核心設計是匿名、多回合、受控制的意見回饋,以降低權威人物或群體壓力對判斷的影響。</p>
+<p>德菲法適合長期趨勢、技術發展或缺乏歷史數據的問題,但可能耗時,且專家共識不代表結果一定正確。</p>
+<p>市場調查(Market Survey)</p>
+<p>向潛在顧客蒐集購買意願、需求與偏好資訊。適合新產品上市與市場需求評估,但購買意願不一定等於實際購買行為。</p>
+<h2>6. 時間序列預測</h2>
+<p>時間序列(Time Series)是依照時間先後排列的觀測資料。時間序列分析的核心假設是:過去資料中的某些規律,可能對未來仍具有預測價值。教材介紹四 種主要變動型態:</p>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">型態                           意義                      典型特徵</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">趨勢 Trend                     長期上升或下降方向               持續成長、長期衰退</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">季節性 Seasonality              固定週期內重複的變動              每年節慶需求</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">循環 Cyclical                  較長期的景氣或經濟波動             景氣擴張與衰退</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">不規則 Random                   無明確規律的隨機變動              突發事件造成的波動</pre>
+<p>季節性與循環性最容易混淆。季節性通常具有相對固定且可辨識的重複週期;循環性則往往與景氣變化有關,週期長度不一定固定。</p>
+<h2>7. Naïve 天真預測法</h2>
+<p>最簡單的預測方式,是直接使用上一期實際值預測下一期。公式:Ft+1 = At。其中 Ft+1 為下一期預測值,At 為本期實際值。</p>
+<p>例如,本月銷量 200 件,則預測下月銷量為 200 件。</p>
+<p>優點是容易計算,常作為比較其他預測方法的基準;缺點是無法充分處理趨勢與季節性。</p>
+<h2>8. 簡單移動平均法 Moving Average</h2>
+<p>移動平均法使用最近 n 期的實際值平均,預測下一期。公式:Ft+1 = (At + At−1 + ⋯ + At−n+1) / n。</p>
+<p>例如最近三個月銷量為 100、120、140 件:F4 = (100 + 120 + 140) / 3 = 120。</p>
+<p>期數選擇的影響</p>
+<p>• 使用較少期數:對近期變化較敏感,但容易受短期波動影響。</p>
+<p>• 使用較多期數:預測結果較平滑,但對趨勢轉折的反應較慢。因此,期數越多不代表預測一定越準確。</p>
+<h2>9. 加權移動平均法 Weighted Moving Average</h2>
+<p>當不同期間的資料重要性不同時,可以分配不同權重。公式:Ft+1 = Σi wi At−i+1,且 Σi wi = 1。</p>
+<p>假設最近三個月銷量為 100、120、140,依照由舊到新的順序給予 0.2、0.3、0.5 權重:F4 = 0.2(100) + 0.3(120) + 0.5(140) = 126。</p>
+<p>這表示最近一期資料對預測結果的影響最大。加權移動平均可以提高近期資料的重要性,但權重的選擇仍需合理依據。</p>
+<h2>10. 指數平滑法 Exponential Smoothing</h2>
+<p>指數平滑法使用前一期預測值與最新實際值,更新下一期預測。其中 α 為平滑係數,0 ≤ α ≤ 1;At 為本期實際值;Ft 為本期預測值。</p>
+<p>公式一:Ft+1 = αAt + (1 − α)Ft。</p>
+<p>公式二:Ft+1 = Ft + α(At − Ft)。</p>
+<p>第二個公式更容易理解其原理:新預測 = 舊預測 + 平滑係數 × 本期預測誤差。</p>
+<p>例如,前一期預測為 120,實際需求為 140,α = 0.3:Ft+1 = 120 + 0.3(140 − 120) = 126。</p>
+<p>平滑係數的意義</p>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">α                            特性                      適用情境</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">較大                           重視最新資料,反應較快             需求變化較快</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">較小                           重視過去預測,較平滑              需求相對穩定</pre>
+<p>簡單指數平滑適合沒有明顯趨勢與季節性的資料。若存在強烈趨勢或季節性,通常需要使用其他或擴充的預測模型。</p>
+<h2>11. 三種平均與平滑方法比較</h2>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">比較項目                簡單移動平均              加權移動平均              指數平滑</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">使用資料                最近 n 期              最近 n 期              前期預測與最新實際值</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">權重                  相同                  自訂                  隨資料年代遞減</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">主要參數                期數 n                權重 wi               平滑係數 α</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">主要優勢                簡單、容易理解             可強調近期資料             更新方便、資料需求少</pre>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere">主要限制                對轉折反應較慢             權重需設定               需選擇適當平滑係數</pre>
+<h2>12. 本章邏輯總結</h2>
+<p>預測方法的選擇,首先取決於資料是否足夠。缺乏歷史資料 → 定性預測;有歷史資料 → 分析時間序列特性 → 選擇適當的定量預測方法。預測的價值不只是 得到一個數字,而是為採購、庫存、產能與人力安排提供決策依據。</p><p class="meta">資料來源：使用者提供之《期中重點整理.pdf》。</p></article></main></body></html>
