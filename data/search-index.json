@@ -79,5 +79,94 @@
       "計算題"
     ],
     "path": "notes/operations-management/integration/integration.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "人力資源管理概論",
+    "title": "人力資源管理概論",
+    "keywords": [
+      "HRM",
+      "人力資本",
+      "VRIO",
+      "HPWS"
+    ],
+    "path": "notes/human-resource-management/ch1/ch1.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "HRM 趨勢與策略",
+    "title": "HRM 趨勢與策略",
+    "keywords": [
+      "勞動市場",
+      "DEI",
+      "知識工作者",
+      "外包",
+      "心理契約"
+    ],
+    "path": "notes/human-resource-management/ch2/ch2.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "工作分析與職務設計",
+    "title": "工作分析與職務設計",
+    "keywords": [
+      "工作分析",
+      "JD",
+      "JS",
+      "KSAO",
+      "JCM"
+    ],
+    "path": "notes/human-resource-management/ch4/ch4.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "人力資源規劃與招募",
+    "title": "人力資源規劃與招募",
+    "keywords": [
+      "人力規劃",
+      "轉移矩陣",
+      "人才短缺",
+      "Yield Ratio",
+      "Cost per Hire"
+    ],
+    "path": "notes/human-resource-management/ch5/ch5.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "員工甄選與任用",
+    "title": "員工甄選與任用",
+    "keywords": [
+      "P-J Fit",
+      "P-O Fit",
+      "信度",
+      "效度",
+      "結構化面試"
+    ],
+    "path": "notes/human-resource-management/ch6/ch6.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "員工訓練",
+    "title": "員工訓練",
+    "keywords": [
+      "Training",
+      "Development",
+      "ADDIE",
+      "訓練遷移",
+      "Onboarding"
+    ],
+    "path": "notes/human-resource-management/ch7/ch7.html"
+  },
+  {
+    "course": "人力資源管理",
+    "chapter": "員工績效管理",
+    "title": "員工績效管理",
+    "keywords": [
+      "績效管理",
+      "績效評估",
+      "回饋",
+      "績效標準"
+    ],
+    "path": "notes/human-resource-management/ch10/ch10.html"
   }
 ]
